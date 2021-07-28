@@ -1,7 +1,7 @@
 import React from "react"
-import Header from '../../components/Header'
-import BodyR from "../../components/BodyR"
-import Footer from '../../components/Footer'
+import Header from '../../Components/Header'
+import BodyR from "../../Components/BodyR"
+import Footer from '../../Components/Footer'
 
 
 const Registro = () =>{
