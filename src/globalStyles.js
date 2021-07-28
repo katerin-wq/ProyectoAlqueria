@@ -30,15 +30,13 @@ body{
 .derechos{
     display: flex;
     background: rgba(180, 1, 9, 2);
-    justify-content: space-between;
-    font-size: 15px;
-    padding-left:150px;
-    padding-right:50px;
+    font-size: 12px;
+    padding:2px 0px 5px 550px;
 }
-.derechos a{
-    padding:5px 0px 5px 0px;
+.derechos{
     color:white;
     text-decoration:none; 
+    font-family:'poppins' sans-serif;
 }
 .redessociales{
     display: flex;

@@ -40,10 +40,7 @@ const Footer = () => {
       </div>
       </div>
         <div className="derechos">
-            <a href="https://www.alqueria.com.co/mapa-del-sitio">Mapa del sitio</a>
-            <a href="https://www.alqueria.com.co/sites/default/files/2021-06/politica-de-tratamiento-de-datos-personales-pns-sas-y-filiales.pdf">Proteccion de datos personales</a>
-            <a href="https://www.alqueria.com.co/sites/default/files/2020-12/aviso-de-privacidad-alqueria.pdf">Avisos de privacidad</a>
-            <a href="https://www.alqueria.com.co/sites/default/files/2020-11/terminos-y-condiciones.pdf">Términos y condiciones</a>
+            @copyright Katerin Torres, Yuri Herrera
         </div>
         </>
     )
