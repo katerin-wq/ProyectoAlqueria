@@ -5,6 +5,7 @@ import iniciarsesion from './pages/iniciarsesion/iniciarsesion'
 import registro from './pages/registro/registro'
 import opciones from './pages/opciones/opciones';
 import nuevagranja from './pages/nuevagranja/nuevagranja'
+import nuestrasgranjas from './pages/nuestrasgranjas/nuestrasgranjas'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" exact component={registro}/>
         <Route path="/iniciarsesion" exact component={iniciarsesion}/>
         <Route path="/nuevagranja" exact component={nuevagranja}/>
+        <Route path="/nuestrasgranjas" exact component={nuestrasgranjas}/>
       </Switch>
     </Router>
     </div>

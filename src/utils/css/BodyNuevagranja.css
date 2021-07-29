@@ -8,7 +8,7 @@ h2{
     font-size: 40px;
     font-family: 'poppins';
 }
-#formulario{
+#formulario1{
     margin-top: 40px;
     margin-bottom: 40px;
     border:2px solid gray;
@@ -20,4 +20,13 @@ h2{
 }
 .nombre{
     padding: 50%;
+}
+h1{
+    background:#CB262A;
+    margin: 34px 0px 25px 560px;
+    padding: 5px 6px 5px 6px;
+    color:white;
+    font-family: 'Roboto';
+    font-size: 18px;
+    border-radius:20px 20px 20px 20px;
 }
