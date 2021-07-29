@@ -23,7 +23,7 @@ const BodyOpciones = () => {
         <h3><input type="text" name="number" size="40" placeholder="Número de parada*"></input></h3>ㅤㅤㅤㅤ<h3><input type="text" name="texto" size="40" placeholder="Ciudad*"></input></h3>
         </nav>
         <div id="botones">
-                        <Link to='/nuestrasgranjas'>
+                        <Link to='/produccion'>
                         ㅤ<h1>Guardar</h1>
                         </Link>
         </div>
