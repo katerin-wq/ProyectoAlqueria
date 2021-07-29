@@ -1,0 +1,33 @@
+body{
+    margin: 0%;
+    padding: 0px;
+}
+#granjas img{
+    width: 900px;
+    height: auto;
+    padding-left: 80px;
+}
+#granjas{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+#textoencima{
+    position: absolute;
+    top: 122.9px;
+    left: 56px;
+}
+#textoencima2{
+        position: absolute;
+        top: 378.9px;
+        left: 56px;
+}
+p{
+    -webkit-text-stroke: 2px white;
+    background-color: brown;
+    padding-left: 283.5px;
+    padding-right: 262.9px;
+}
+p:hover{
+    transform: scale(1.1);
+}

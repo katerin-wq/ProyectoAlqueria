@@ -1,8 +1,10 @@
 import './App.css';
 import GlobalStyles from './globalStyles';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import pagina1 from './pages/page1/iniciarsesion'
-import pagina2 from './pages/page2/registro'
+import iniciarsesion from './pages/iniciarsesion/iniciarsesion'
+import registro from './pages/registro/registro'
+import opciones from './pages/opciones/opciones';
+import nuevagranja from './pages/nuevagranja/nuevagranja'
 
 function App() {
   return (
@@ -10,8 +12,10 @@ function App() {
     <Router>
       <GlobalStyles/>
       <Switch>
-        <Route path="/iniciarsesion" exact component={pagina1}/>
-        <Route path="/" exact component={pagina2}/>
+        <Route path="/opciones" exact component={opciones}/>
+        <Route path="/" exact component={registro}/>
+        <Route path="/iniciarsesion" exact component={iniciarsesion}/>
+        <Route path="/nuevagranja" exact component={nuevagranja}/>
       </Switch>
     </Router>
     </div>

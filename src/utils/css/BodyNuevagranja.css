@@ -1,0 +1,23 @@
+body{
+    margin:0%;
+    padding: 0%;
+}
+
+h2{
+    color: #0D0252;
+    font-size: 40px;
+    font-family: 'poppins';
+}
+#formulario{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border:2px solid gray;
+}
+#registronuevo{
+    display: flex;
+    margin-left: 285px;
+    font-family: 'poppins';
+}
+.nombre{
+    padding: 50%;
+}
