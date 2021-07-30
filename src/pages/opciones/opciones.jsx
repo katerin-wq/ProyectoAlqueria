@@ -1,16 +1,16 @@
 import React from "react"
-import Header from '../../Components/Header'
-import BodyO from "../../Components/BodyO"
-import Footer from '../../Components/Footer'
+import Header from '../../Components/header.jsx'
+import Opciones from "../../Components/opcionesparausuariio.jsx"
+import Footer from '../../Components/footer.jsx'
 
 
-const Opciones = () =>{
+const opciones = () =>{
 	return(
 	<>
 	  <Header/>
-      <BodyO/>
+      <Opciones/>
 	  <Footer/>
 	</>
 	)
 } 
-export default Opciones
+export default opciones

@@ -1,16 +1,16 @@
 import React from "react"
-import Header from '../../Components/Header'
-import BodyN from "../../Components/BodyN"
-import Footer from '../../Components/Footer'
+import Header from '../../Components/header.jsx'
+import Nuevagranja from "../../Components/nuevagranja"
+import Footer from '../../Components/footer.jsx'
 
 
-const Nuevagranja = () =>{
+const nuevagranja = () =>{
 	return(
 	<>
 	  <Header/>
-      <BodyN/>
+      <Nuevagranja/>
 	  <Footer/>
 	</>
 	)
 } 
-export default Nuevagranja
+export default nuevagranja
