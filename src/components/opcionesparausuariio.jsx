@@ -17,7 +17,7 @@ const BodyOpciones = () => {
                        <p>Nueva Granja</p></Link>
         <p></p>
         <img src={nuestragranja} alt="Cargando..."/>
-        <Link to='/produccion' id="textoencima2">
+        <Link to='/nuestrasgranjas' id="textoencima2">
                        <p>‎      ‏‏‎Produccion‎‎‎      ‏‏‎   ‏‏‎‎      ‏‏‎‎      ‏‏‎‎      
                           ‏‏‎</p></Link>
         </nav>
