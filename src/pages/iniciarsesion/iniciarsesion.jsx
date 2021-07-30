@@ -1,7 +1,7 @@
 import React from "react"
-import Header from '../../Components/Header'
-import BodyP from "../../Components/BodyP"
-import Footer from '../../Components/Footer'
+import Header from '../../components/Header'
+import BodyP from '../../components/BodyP'
+import Footer from '../../components/Footer'
 
 
 const iniciarsesion = () =>{

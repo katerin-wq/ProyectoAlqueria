@@ -3,9 +3,8 @@ import GlobalStyles from './globalStyles';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import iniciarsesion from './pages/iniciarsesion/iniciarsesion'
 import registro from './pages/registro/registro'
-import opciones from './pages/opciones/opciones';
+import opciones from './pages/opciones/opciones'
 import nuevagranja from './pages/nuevagranja/nuevagranja'
-
 function App() {
   return (
     <div className="App">

@@ -1,7 +1,7 @@
 import React from "react"
-import Header from '../../Components/Header'
-import BodyN from "../../Components/BodyN"
-import Footer from '../../Components/Footer'
+import Header from '../../components/Header'
+import BodyN from '../../components/BodyN'
+import Footer from '../../components/Footer'
 
 
 const Nuevagranja = () =>{
