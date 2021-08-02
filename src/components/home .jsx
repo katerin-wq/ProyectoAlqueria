@@ -24,6 +24,7 @@ const BodyRegistro = () => {
                         </Link>
         </nav>
         </div>
+        
     )
 }
  export default BodyRegistro

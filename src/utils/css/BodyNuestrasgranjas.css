@@ -1,0 +1,17 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+#banner{
+    background-color: #004296;
+    opacity: 71%;
+    color: white;
+    padding: 2% 0% 2% 0%;
+    font-family: 'poppins';
+}
+#cuadroimagenes img{
+    width: 290px;
+    height: auto;
+    border-radius: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+}
