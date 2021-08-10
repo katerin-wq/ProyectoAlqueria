@@ -2,34 +2,8 @@ import React,{useState} from "react";
 import '../utils/css/BodyNuevagranja.css'
 import {Link} from 'react-router-dom' //Declaration//
 
-const LinkForm = (props) => {
-
-    const initialStateValues = {
-        Nombre:'',
-        Apellido:'',
-        Cedula:'',
-        Telefono:'',
-        Correoelectronico:'', 
-        Confirmacioncorreo:'',
-        Direccion:'',
-        Numeroparada:'',
-        Ciudad:''  
-    };
-
-    const [values,setValues]  = useState(initialStateValues); 
-
-    const handleInputChange = e =>{
-      const {name, value} = e.target;
-      setValues({...values, [name]: value})
-    }
-
-    const handleSubmit = (e) =>{
-        e.preventDefault();
-        props.addOrEditLink(values);
-        setValues(initialStateValues)
-    }
+const nuevagranja = () => {
     return (
-        <form className="card card-body" onSubmit={handleSubmit}>
         <div id="formulario1">
         <h2>Formulario "Nueva granja"</h2>
         <nav id="registronuevo">
@@ -50,7 +24,6 @@ const LinkForm = (props) => {
           <h1>Guardar</h1>
         <Link to="/produccion"><h1>Continuar</h1></Link>
         </div>
-        </form>
     )
 };
-export default LinkForm; 
+export default nuevagranja; 
