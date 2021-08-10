@@ -1,7 +1,8 @@
 import firebase from "firebase/app";
 import 'firebase/firestore';
 
-var firebaseConfig = {
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
     apiKey: "AIzaSyAZt-IzgcHWP5fe_QPskbt-uBlP3N8oJuE",
     authDomain: "proyectoalqueria-f0c9e.firebaseapp.com",
     projectId: "proyectoalqueria-f0c9e",
@@ -11,5 +12,5 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   const fb = firebase.initializeApp(firebaseConfig);
-  
-  export const db = fb.firestore();
+
+export const db = fb.firestore();

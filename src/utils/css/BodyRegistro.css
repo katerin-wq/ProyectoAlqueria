@@ -4,6 +4,14 @@ body{
     text-align: center;
     align-content: center;
 }
+#registro{
+    border: 2px dashed gray;
+    margin: 0px 220px 0px 270px;
+    padding-top: 15px;
+}
+#formulario{
+    margin-bottom: 5%;
+}
 #formulario img{
     display: flex;
     margin-left:-24px;
@@ -15,29 +23,17 @@ body{
     color: #0D0252;
     font-family: 'poppins';
 }
-h3{
-    color:gray;
+#formulario h4{
+    font-family: 'poppins';   
 }
-h5{
-    font-family: 'poppins' sans-serif;
-    color: #303738;
-}
-#registro h3, h5{
+#registro h4{
     display: flex;
-    padding: 0px 0px 2px 260px;
-}
-#registro img{
-    width:30px;
-    height: auto;   
-    padding:4px;
-    border:1px solid gray;
-    border-radius: 80%;
 }
 #formulario h1{
     background:#CB262A;
     padding:12px 60px;
-    margin-left: 42%;
-    margin-top: 4%;
+    margin-left: 37%;
+    margin-top: 1%;
     color:white;
     font-family: 'Roboto';
     font-size: 16px;
@@ -45,7 +41,4 @@ h5{
 }
 a{
     text-decoration: none;
-}
-#formulario{
-    margin-bottom: 60px;
 }
