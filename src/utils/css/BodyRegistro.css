@@ -6,10 +6,10 @@ body{
 }
 #registro{
     border: 2px dashed gray;
-    margin: 0px 290px 0px 290px;
+    margin: 0px 290px 0px 305px;
     padding-top: 15px;
 }
-#formulario{
+#registro{
     margin-bottom: 5%;
 }
 #formulario img{
@@ -23,16 +23,16 @@ body{
     color: #0D0252;
     font-family: 'poppins';
 }
-#formulario h6{
+#registro h6{
     font-family: 'poppins' sans-serif;   
 }
 #registro h6{
     display: flex;
 }
-#formulario h1{
+#registro h1{
     background:#CB262A;
     padding:12px 60px;
-    margin-left: 37%;
+    margin-left: 35%;
     margin-top: 1%;
     color:white;
     font-family: 'Roboto';
@@ -41,4 +41,11 @@ body{
 }
 a{
     text-decoration: none;
+}
+#registro h6{
+    font-size: 15px;
+}
+#registro h4{
+    text-align: left;
+    margin-left: -108px;
 }

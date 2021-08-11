@@ -86,7 +86,7 @@ const Links = () => {
         ))}
       </div>
       <div id="volver">
-        <Link to='/nuevagranja'><h1>ㅤAtrasㅤ</h1></Link>
+        <Link to='/opciones'><h1>ㅤAtrasㅤ</h1></Link>
       </div>
   </div>
   );

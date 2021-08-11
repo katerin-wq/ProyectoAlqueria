@@ -17,11 +17,16 @@ const BodyOpciones = () => {
                        <p>Nueva Granja</p></Link>
         <p></p>
         <img src={nuestragranja} alt="Cargando..."/>
-        <Link to='/nuestrasgranjas' id="textoencima2">
+        <Link to='/produccion' id="textoencima2">
                        <p>‎      ‏‏‎Produccion‎‎‎      ‏‏‎   ‏‏‎‎      ‏‏‎‎      ‏‏‎‎      
                           ‏‏‎</p></Link>
         </nav>
+        <div id="volver">
+        ㅤ<Link to='/'>ㅤㅤㅤㅤㅤㅤ
+        ㅤㅤㅤ<h6>Atras</h6>ㅤ</Link>
+      </div>
         </div>
+        
     )
 }
 

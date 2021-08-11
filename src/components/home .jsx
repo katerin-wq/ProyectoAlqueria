@@ -13,14 +13,18 @@ const BodyRegistro = () => {
         ㅤ
         <nav id="registro">
         <br></br>
-        <h6>ㅤㅤㅤㅤㅤㅤㅤㅤCorreo electrónico</h6>
-        <h6>ㅤㅤㅤㅤㅤㅤㅤㅤ<input type="mail" name="correo" size="64" placeholder="usuario@gmail.com"></input></h6>
-        ㅤ <h6>ㅤㅤㅤㅤㅤㅤㅤㅤContraseña</h6>
-        <h6>ㅤㅤㅤㅤㅤㅤㅤㅤ<input type="password" name="contraseña" size="64" placeholder="Contraseña"></input></h6>
-        ㅤ
+        <h4>ㅤㅤㅤㅤㅤㅤㅤㅤㅤCorreo electrónico</h4>
+        <h6>ㅤㅤㅤㅤㅤㅤㅤ<input type="mail" name="correo" size="64" placeholder="usuario@gmail.com"></input></h6>
+        <br></br>
+        <br></br>
+        <h4>ㅤㅤㅤㅤㅤㅤㅤㅤㅤContraseña</h4>
+        <h6>ㅤㅤㅤㅤㅤㅤㅤ<input type="password" name="contraseña" size="64" placeholder="Contraseña"></input></h6>
+        ㅤ<br></br>
+        <br></br>
         <Link to='/opciones'>
                            <h1> INICIAR SESION</h1>
                         </Link>
+                        <br></br>
         </nav>
         </div>
         

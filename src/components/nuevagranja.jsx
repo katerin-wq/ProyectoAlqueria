@@ -4,6 +4,9 @@ import { toast } from 'react-toastify'
 import { db } from '../firebase';
 import borrar from '../utils/images/remove.png'
 import editar from '../utils/images/edit.png'
+import {Link} from 'react-router-dom' //Declaration//
+
+import '../utils/css/BodyNuevagranja.css'
 
 const Links = () => {
    
@@ -83,6 +86,9 @@ const Links = () => {
            </div>
           </div>
         ))}
+      </div>
+      <div id="volver">
+        <Link to='/opciones'><h1>ㅤAtrasㅤ</h1></Link>
       </div>
   </div>
   );
