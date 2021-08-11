@@ -9,11 +9,15 @@ const BodyRegistro = () => {
         <div id="formulario">
         <img src={Banner} alt="Cargando..."/>
         <p>BIENVENIDOS</p>
+        ㅤㅤ
+        ㅤ
         <nav id="registro">
-        <h4>ㅤㅤㅤㅤㅤㅤㅤㅤCorreo electrónico</h4>
-        <h4>ㅤㅤㅤㅤㅤㅤㅤㅤ<input type="mail" name="correo" size="64" placeholder="usuario@gmail.com"></input></h4>
-        <h4>ㅤㅤㅤㅤㅤㅤㅤㅤContraseña</h4>
-        <h4>ㅤㅤㅤㅤㅤㅤㅤㅤ<input type="password" name="contraseña" size="64" placeholder="Contraseña"></input></h4>
+        <br></br>
+        <h6>ㅤㅤㅤㅤㅤㅤㅤㅤCorreo electrónico</h6>
+        <h6>ㅤㅤㅤㅤㅤㅤㅤㅤ<input type="mail" name="correo" size="64" placeholder="usuario@gmail.com"></input></h6>
+        ㅤ <h6>ㅤㅤㅤㅤㅤㅤㅤㅤContraseña</h6>
+        <h6>ㅤㅤㅤㅤㅤㅤㅤㅤ<input type="password" name="contraseña" size="64" placeholder="Contraseña"></input></h6>
+        ㅤ
         <Link to='/opciones'>
                            <h1> INICIAR SESION</h1>
                         </Link>

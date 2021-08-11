@@ -14,13 +14,19 @@ body{
 }
 #textoencima{
     position: absolute;
-    top: 118.9px;
+    top: 43.9px;
     left: 56px;
 }
 #textoencima2{
         position: absolute;
-        top: 373.9px;
+        top: 276.9px;
         left: 56px;
+}
+#textoencima p{
+    font-size: 40px;
+}
+#textoencima2 p{
+    font-size: 40px;
 }
 p{
     -webkit-text-stroke: 2px white;

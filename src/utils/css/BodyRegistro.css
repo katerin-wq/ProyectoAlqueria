@@ -6,7 +6,7 @@ body{
 }
 #registro{
     border: 2px dashed gray;
-    margin: 0px 220px 0px 270px;
+    margin: 0px 290px 0px 290px;
     padding-top: 15px;
 }
 #formulario{
@@ -23,10 +23,10 @@ body{
     color: #0D0252;
     font-family: 'poppins';
 }
-#formulario h4{
-    font-family: 'poppins';   
+#formulario h6{
+    font-family: 'poppins' sans-serif;   
 }
-#registro h4{
+#registro h6{
     display: flex;
 }
 #formulario h1{

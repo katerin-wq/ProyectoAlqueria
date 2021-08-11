@@ -1,29 +1,91 @@
-import React,{useState} from "react";
-import '../utils/css/BodyNuevagranja.css'
-import {Link} from 'react-router-dom' //Declaration//
+import React, {useEffect, useState} from "react";
+import LinkForm from '../Components/Links';
+import { toast } from 'react-toastify'
+import { db } from '../firebase';
+import borrar from '../utils/images/remove.png'
+import editar from '../utils/images/edit.png'
 
-const nuevagranja = () => {
-    return (
-        <div id="formulario1">
-        <h2>Formulario "Nueva granja"</h2>
-        <nav id="registronuevo">
-        <h3><input type="name" name="nombre" size="40" placeholder="Nombre*"></input></h3>ㅤㅤㅤㅤ<h3><input type="text" name="nombre" size="40" placeholder="Apellido*"></input></h3>
-        </nav>
-        <nav id="registronuevo">
-        <h3><input type="text" name="number" size="40" placeholder="Cedula*"></input></h3>ㅤㅤㅤㅤ<h3><input type="text" name="nombre" size="40" placeholder="Teléfono*"></input></h3>
-        </nav>
-        <nav id="registronuevo">
-        <h3><input type="mail" name="correo" size="40" placeholder="Correo eléctronico*"></input></h3>ㅤㅤㅤㅤ<h3><input type="mail" name="correo" size="40" placeholder="Confirmar Correo eléctronico*"></input></h3>
-        </nav>
-        <nav id="registronuevo">
-        <h3><input type="text" name="direccion" size="95" placeholder="Dirección*"></input></h3>
-        </nav>
-        <nav id="registronuevo">
-        <h3><input type="text" name="number" size="40" placeholder="Número de parada*"></input></h3>ㅤㅤㅤㅤ<h3><input type="text" name="texto" size="40" placeholder="Ciudad*"></input></h3>
-        </nav>
-          <h1>Guardar</h1>
-        <Link to="/produccion"><h1>Continuar</h1></Link>
+const Links = () => {
+   
+  const [links, setLinks] = useState([]);
+    const [currentId, setCurrenId] = useState('');
+
+   const addOrEditLink = async (linkObject) => {
+    try {
+      if (currentId === "") {
+        await db.collection("links").doc().set(linkObject);
+        toast("Nueva Granja Añadida", {
+          type: "success",
+          autoClose: 1500,
+
+        });
+      } else {
+        await db.collection("links").doc(currentId).update(linkObject);
+        toast("Registro actualizado", {
+          type: "info",
+          autoClose: 1500,
+
+        });
+        setCurrenId("");
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  const onDeleteLink = async (id) => {
+    if (window.confirm("¿Estas seguro de quieres eliminar esta granja?")) {
+      await db.collection("links").doc(id).delete();
+      toast('Registro eliminado', {
+        type: "error",
+        autoClose: 1500,
+      })  
+     }
+  };
+  const getLinks = async () =>{
+    db.collection("links").onSnapshot((querySnapshot) =>{
+      const docs = [];
+      querySnapshot.forEach(doc => {
+        docs.push({...doc.data(), id:doc.id});
+      });
+      setLinks(docs)
+    });
+
+  }
+  useEffect(() => {
+    getLinks();
+  },[]);
+
+  return (
+  <div>
+        <div className="col-md-5 pd-2">
+        <LinkForm {...{ addOrEditLink, currentId, links }} />
         </div>
-    )
+      <div className="col-md-5">
+        {links.map(link => (
+          <div className="card mb-1 pd-2" key={link.id}>
+           <div className="card-body">
+              <div className="d-flex justify-content-between">
+              <h3>{link.granja}</h3>
+               <div>
+               <img id="borrar" src={borrar} alt="Cargando..." 
+              onClick={() => onDeleteLink(link.id)}
+              delete/>
+              ㅤ 
+              <img id="editar" src={editar} alt="Cargando..." 
+              onClick= {() => setCurrenId(link.id)} 
+              create/>
+               </div>
+              </div>
+            <a>{link.titular}</a> 
+            <a>{link.direccion}</a>
+            <a>{link.telefono}</a> 
+            <a>{link.ciudad}</a>
+           </div>
+          </div>
+        ))}
+      </div>
+  </div>
+  );
 };
-export default nuevagranja; 
+
+export default Links;

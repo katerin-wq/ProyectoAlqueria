@@ -1,0 +1,13 @@
+.col-md-5{
+    margin-left: 300px;
+}
+#borrar, #editar{
+    width: 20px;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+#volver{
+    margin-left: -80px;
+}

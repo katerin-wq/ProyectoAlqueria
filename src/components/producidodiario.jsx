@@ -1,84 +1,95 @@
-import React,{useState, useEffect } from "react";
-import { db } from "../firebase";
-// import { db } from "../firebase";
- 
-const LinkForm = (props) => {
+import React, {useEffect, useState} from "react";
+import LinkForm from "./LinkForm";
+import '../utils/css/BodyProducido.css'
+import { toast } from 'react-toastify'
+import { db } from '../firebase';
+import borrar from '../utils/images/remove.png'
+import editar from '../utils/images/edit.png'
+import {Link} from 'react-router-dom' //Declaration//
 
-    const initialStateValues = {
-        fecha:'',
-        granja: '',
-        cantidad:''
-    };
 
-    const [values,setValues]  = useState(initialStateValues); 
+const Links = () => {
+   
+  const [links, setLinks] = useState([]);
+    const [currentId, setCurrenId] = useState('');
 
-    const handleInputChange = e =>{
-      const {name, value} = e.target;
-      setValues({...values, [name]: value})
-    }
+   const addOrEditLink = async (linkObject) => {
+    try {
+      if (currentId === "") {
+        await db.collection("links").doc().set(linkObject);
+        toast("Nuevo registro", {
+          type: "success",
+          autoClose: 1500,
 
-    const handleSubmit = (e) =>{
-        e.preventDefault();
-        props.addOrEditLink(values);
-        setValues(initialStateValues)
-    };
-
-    const getLinkById = async (id) => {
-      const doc = await db.collection('links').doc(id).get();
-      setValues({ ...doc.data() });
-    }
-
-    useEffect(() => {
-      if (props.currentId === "") {
-        setValues({ ...initialStateValues });
+        });
       } else {
-        getLinkById(props.currentId);
+        await db.collection("links").doc(currentId).update(linkObject);
+        toast("Registro actualizado", {
+          type: "info",
+          autoClose: 1500,
+
+        });
+        setCurrenId("");
       }
-    }, [props.currentId]);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  const onDeleteLink = async (id) => {
+    if (window.confirm("are you sure you want to delete this link?")) {
+      await db.collection("links").doc(id).delete();
+      toast('Registro eliminado', {
+        type: "error",
+        autoClose: 1500,
+      })  
+     }
+  };
+  const getLinks = async () =>{
+    db.collection("links").onSnapshot((querySnapshot) =>{
+      const docs = [];
+      querySnapshot.forEach(doc => {
+        docs.push({...doc.data(), id:doc.id});
+      });
+      setLinks(docs)
+    });
 
-    return (
-        <form className="card card-body" onSubmit={handleSubmit}>
-        <div className="form-group input-group">
-           {/* <div className="input-group-text bg-light">
-            <i className="material-icons">insert_fecha</i>
-           </div> */}
-        <input 
-        type="date" 
-        className="form-control" 
-        placeholder="Insertar fechas" 
-        name="fecha"
-        onChange={handleInputChange}
-        value={values.fecha}
-        />
+  }
+  useEffect(() => {
+    getLinks();
+  },[]);
+
+  return (
+  <div>
+        <div className="col-md-5 pd-2">
+        <LinkForm {...{ addOrEditLink, currentId, links }} />
         </div>
-
-        <div className="form-group input-group">
-          {/* <div className="input-group-text bg-light">
-           <i className="material-icons">create</i>
-          </div>  */}
-          <input 
-          type="text" 
-          className="form-control" 
-          name="granja" 
-          placeholder="Nombre de la granja" onChange={handleInputChange}
-            value={values.granja}
-          />
-        </div>
-
-        <div className="form-group">
-          <textarea name="cantidad" 
-          rows="3" 
-          className="form-control"
-          placeholder="Cantidad recojida" onChange={handleInputChange}
-          value={values.cantidad}
-          ></textarea>
-        </div>
-
-        <button className="btn btn-primary btn-block">
-          {props.currentId === '' ? 'Guardar': 'Editar' }
-        </button>
-
-        </form>
-    )
+      <div className="col-md-5">
+        {links.map(link => (
+          <div className="card mb-1 pd-2" key={link.id}>
+           <div className="card-body">
+              <div className="d-flex justify-content-between">
+              <h4>{link.fecha}</h4>
+               <div>
+               <img id="borrar" src={borrar} alt="Cargando..." 
+              onClick={() => onDeleteLink(link.id)}
+              delete/>
+ㅤ
+              <img id="editar" src={editar} alt="Cargando..." 
+              onClick= {() => setCurrenId(link.id)} 
+              />
+               </div>
+              </div>
+            <a>{link.granja}</a> 
+            <a>{link.cantidad}</a>
+           </div>
+          </div>
+        ))}
+      </div>
+      <div id="volver">
+        <Link to='/nuevagranja'><h1>ㅤAtrasㅤ</h1></Link>
+      </div>
+  </div>
+  );
 };
-export default LinkForm; 
+
+export default Links;
