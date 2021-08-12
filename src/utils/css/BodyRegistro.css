@@ -5,12 +5,11 @@ body{
     align-content: center;
 }
 #registro{
-    border: 2px dashed gray;
     margin: 0px 290px 0px 305px;
     padding-top: 15px;
 }
 #registro{
-    margin-bottom: 5%;
+    margin-bottom: 10px;
 }
 #formulario img{
     display: flex;
