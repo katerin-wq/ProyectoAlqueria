@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/katerin-wq/ProyectoAlqueria/static/css/main.6dbc26ed.chunk.css",
-    "main.js": "/katerin-wq/ProyectoAlqueria/static/js/main.88cd99cc.chunk.js",
-    "main.js.map": "/katerin-wq/ProyectoAlqueria/static/js/main.88cd99cc.chunk.js.map",
+    "main.js": "/katerin-wq/ProyectoAlqueria/static/js/main.d0643c09.chunk.js",
+    "main.js.map": "/katerin-wq/ProyectoAlqueria/static/js/main.d0643c09.chunk.js.map",
     "runtime-main.js": "/katerin-wq/ProyectoAlqueria/static/js/runtime-main.2b621896.js",
     "runtime-main.js.map": "/katerin-wq/ProyectoAlqueria/static/js/runtime-main.2b621896.js.map",
     "static/css/2.d66534b3.chunk.css": "/katerin-wq/ProyectoAlqueria/static/css/2.d66534b3.chunk.css",
@@ -32,6 +32,6 @@
     "static/css/2.d66534b3.chunk.css",
     "static/js/2.2a9a64c7.chunk.js",
     "static/css/main.6dbc26ed.chunk.css",
-    "static/js/main.88cd99cc.chunk.js"
+    "static/js/main.d0643c09.chunk.js"
   ]
 }
