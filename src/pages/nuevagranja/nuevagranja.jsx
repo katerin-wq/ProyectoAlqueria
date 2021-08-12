@@ -1,7 +1,7 @@
 import React from "react"
-import Header from '../../Components/header.jsx'
-import Nuevagranja from "../../Components/nuevagranja"
-import Footer from '../../Components/footer.jsx'
+import Header from '../../components/Header.jsx'
+import Nuevagranja from "../../components/nuevagranja"
+import Footer from '../../components/Footer.jsx'
 
 
 const nuevagranja = () =>{

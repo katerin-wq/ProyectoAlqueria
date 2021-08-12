@@ -1,7 +1,7 @@
 import React from "react"
-import Header from '../../Components/header.jsx'
-import Opciones from "../../Components/opcionesparausuariio.jsx"
-import Footer from '../../Components/footer.jsx'
+import Header from '../../components/Header.jsx'
+import Opciones from "../../components/opcionesparausuariio.jsx"
+import Footer from '../../components/Footer.jsx'
 
 
 const opciones = () =>{

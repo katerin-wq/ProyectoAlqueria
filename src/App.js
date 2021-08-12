@@ -14,10 +14,11 @@ function App() {
     <Router>
       <GlobalStyles/>
       <Switch>
-        <Route path="/opciones" exact component={opciones}/>
+        <Route path="/ProyectoAlqueria/opciones" component={opciones}/>
+        <Route path="/ProyectoAlqueria/produccion" component={produccion}/>
+        <Route path="/ProyectoAlqueria/nuevagranja" component={nuevagranja}/>
         <Route path="/" exact component={iniciarsesion}/>
-        <Route path="/produccion" exact component={produccion}/>
-        <Route path="/nuevagranja" exact component={nuevagranja}/>
+        <Route path="/" component={iniciarsesion}/>
       </Switch>
     </Router>
     </div>

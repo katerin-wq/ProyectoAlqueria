@@ -13,11 +13,11 @@ const BodyOpciones = () => {
         <nav id="granjas">
         <p></p>
         <img src={nuevagranja} alt="Cargando..."/>
-        <Link to='/nuevagranja' id="textoencima">
+        <Link to='/ProyectoAlqueria/nuevagranja' id="textoencima">
                        <p>       Nueva Granja         </p></Link>
         <p></p>
         <img src={nuestragranja} alt="Cargando..."/>
-        <Link to='/produccion' id="textoencima2">
+        <Link to='/ProyectoAlqueria/produccion' id="textoencima2">
                        <p>       ‎       ‏‏‎Produccion‎‎‎                        ‏‏‎   ‏‏‎‎      ‏‏‎‎      ‏‏‎‎      
                           ‏‏‎</p></Link>
         </nav>

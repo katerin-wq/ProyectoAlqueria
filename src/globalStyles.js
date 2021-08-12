@@ -22,6 +22,7 @@ body{
 #menu img{
     height:56px;
     width:auto;
+    margin-left:90px;
 }
 #menu a{
   display:block;

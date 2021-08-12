@@ -1,7 +1,7 @@
 import React from "react"
-import Header from '../../Components/header.jsx'
-import Links from "../../Components/producidodiario"
-import Footer from '../../Components/footer.jsx'
+import Header from '../../components/Header.jsx'
+import Links from "../../components/producidodiario"
+import Footer from '../../components/Footer.jsx'
 import {ToastContainer} from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
 import 'bootswatch/dist/journal/bootstrap.min.css'

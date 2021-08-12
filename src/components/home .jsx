@@ -21,7 +21,7 @@ const BodyRegistro = () => {
         <h6>ㅤㅤㅤㅤㅤㅤㅤ<input type="password" name="contraseña" size="64" placeholder="Contraseña"></input></h6>
         ㅤ<br></br>
         <br></br>
-        <Link to='/opciones'>
+        <Link to='/ProyectoAlqueria/opciones'>
                            <h1> INICIAR SESION</h1>
                         </Link>
                         <br></br>

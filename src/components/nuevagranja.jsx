@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import LinkForm from '../Components/Links';
+import LinkForm from '../components/Links';
 import { toast } from 'react-toastify'
 import { db } from '../firebase';
 import borrar from '../utils/images/remove.png'
@@ -88,8 +88,8 @@ const Links = () => {
         ))}
       </div>
       <div id="volver">
-        <Link to='/opciones'><h1>ㅤㅤㅤㅤㅤㅤAtrasㅤ</h1></Link>
-        <Link to='/produccion'><h1>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤAñadir Produccion</h1></Link>
+        <Link to='/ProyectoAlqueria/opciones'><h1>ㅤㅤㅤㅤㅤㅤAtrasㅤ</h1></Link>
+        <Link to='/ProyectoAlqueria/produccion'><h1>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤAñadir Produccion</h1></Link>
       </div>
   </div>
   );
