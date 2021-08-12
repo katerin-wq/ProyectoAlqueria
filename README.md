@@ -1,6 +1,5 @@
 # proyectoAlqueria
-<h2>Objetivo del proyecto</h2>
-<p>Crear un sitio web a los proveedores, tanto antiguos como nuevos, de dicha empresa para llevar su registro de producción y demás. Además, donde el administrador pueda suministrar el proceso de sus proveedores.</p>
+
 <h2>Construido con:</h2>
 <ul>    
     <li>Javascript</li>    
