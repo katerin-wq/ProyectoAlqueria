@@ -6,6 +6,7 @@ body{
     width: 900px;
     height: auto;
     padding-left: 80px;
+    padding-top: 2%;
 }
 #granjas{
     position: relative;
@@ -14,21 +15,35 @@ body{
 }
 #textoencima{
     position: absolute;
-    top: 118.9px;
+    top: 135.9px;
     left: 56px;
 }
 #textoencima2{
         position: absolute;
-        top: 373.9px;
+        top: 356px;
         left: 56px;
+}
+#textoencima p{
+    font-size: 50px;
+}
+#textoencima2 p{
+    font-size: 50px;
 }
 p{
     -webkit-text-stroke: 2px white;
     background: rgb(255,0,0);
 background: linear-gradient(108deg, rgba(255,0,0,0.5130427170868348) 0%, rgba(255,0,0,0.48503151260504207) 51%, rgba(255,0,0,0.48783263305322133) 100%);
-    padding-left: 283.5px;
-    padding-right: 262.9px;
+    padding-left: 263px;
+    padding-right: 202.9px;
 }
 p:hover{
     transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+}
+#volver h6{
+    font-size: 40px;
+    margin:0% 0% 2% -5%;
+    padding: 0%;
 }

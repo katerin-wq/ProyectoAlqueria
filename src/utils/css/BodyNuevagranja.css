@@ -1,32 +1,10 @@
-body{
-    margin:0%;
-    padding: 0%;
+#col-md-5{
+    margin-left: 300px;
 }
-
-h2{
-    color: #0D0252;
-    font-size: 40px;
-    font-family: 'poppins';
+#borrar, #editar{
+    width: 20px;
+    height: auto;
 }
-#formulario1{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border:2px solid gray;
-}
-#registronuevo{
-    display: flex;
-    margin-left: 285px;
-    font-family: 'poppins';
-}
-.nombre{
-    padding: 50%;
-}
-h1{
-    background:#CB262A;
-    margin: 34px 0px 25px 560px;
-    padding: 5px 6px 5px 6px;
-    color:white;
-    font-family: 'Roboto';
-    font-size: 18px;
-    border-radius:20px 20px 20px 20px;
+#volver{
+    margin-left: 20px;
 }

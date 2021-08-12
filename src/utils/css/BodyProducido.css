@@ -1,0 +1,16 @@
+.col-md-5{
+    margin-left: 300px;
+    margin-top: 18.9px;
+    margin-bottom: 50px;
+}
+#borrar, #editar{
+    width: 20px;
+    height: auto;
+}
+#volver{
+    display: flex;
+}
+#volver h1{
+    font-size: 20px;
+    margin-top: -10px;
+}

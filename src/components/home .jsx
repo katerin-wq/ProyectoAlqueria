@@ -1,8 +1,6 @@
 import React from 'react' // import ALWAYS react //
 import '../utils/css/BodyRegistro.css'
 import Banner from '../utils/images/leches-alqueria.png'
-import logofacebook from '../utils/images/facebooklogo.PNG';
-import logogoogle from '../utils/images/googlelogo.png'
 import {Link} from 'react-router-dom' //Declaration//
 
 
@@ -11,19 +9,25 @@ const BodyRegistro = () => {
         <div id="formulario">
         <img src={Banner} alt="Cargando..."/>
         <p>BIENVENIDOS</p>
-        <h3>inicia Sesión con</h3>
+        ㅤㅤ
+        ㅤ
         <nav id="registro">
-        <h3>ㅤㅤㅤㅤㅤㅤㅤㅤ----------------------ㅤㅤ<img src={logofacebook} alt="Cargando..."/>ㅤㅤ<img src={logogoogle} alt="Cargando..."/>ㅤ----------------------</h3>
-        <h3>ㅤㅤㅤㅤㅤㅤㅤㅤCorreo electrónico</h3>
-        <h3>ㅤㅤㅤㅤㅤㅤㅤㅤ<input type="mail" name="correo" size="64" placeholder="usuario@gmail.com"></input></h3>
-        <h3>ㅤㅤㅤㅤㅤㅤㅤㅤContraseña</h3>
-        <h3>ㅤㅤㅤㅤㅤㅤㅤㅤ<input type="password" name="contraseña" size="64" placeholder="Contraseña"></input></h3>
-        <h5>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ<input type="checkbox" name="recordar"></input>Recordar mis datosㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ¿Olvidaste tú contraseña?</h5>
+        <br></br>
+        <h4>ㅤㅤㅤㅤㅤㅤㅤㅤㅤCorreo electrónico</h4>
+        <h6>ㅤㅤㅤㅤㅤㅤㅤ<input type="mail" name="correo" size="64" placeholder="usuario@gmail.com"></input></h6>
+        <br></br>
+        <br></br>
+        <h4>ㅤㅤㅤㅤㅤㅤㅤㅤㅤContraseña</h4>
+        <h6>ㅤㅤㅤㅤㅤㅤㅤ<input type="password" name="contraseña" size="64" placeholder="Contraseña"></input></h6>
+        ㅤ<br></br>
+        <br></br>
         <Link to='/opciones'>
                            <h1> INICIAR SESION</h1>
                         </Link>
+                        <br></br>
         </nav>
         </div>
+        
     )
 }
  export default BodyRegistro
