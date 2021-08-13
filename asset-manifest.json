@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ProyectoAlqueria/static/css/main.6dbc26ed.chunk.css",
-    "main.js": "/ProyectoAlqueria/static/js/main.bac71c79.chunk.js",
-    "main.js.map": "/ProyectoAlqueria/static/js/main.bac71c79.chunk.js.map",
+    "main.js": "/ProyectoAlqueria/static/js/main.d20f48ab.chunk.js",
+    "main.js.map": "/ProyectoAlqueria/static/js/main.d20f48ab.chunk.js.map",
     "runtime-main.js": "/ProyectoAlqueria/static/js/runtime-main.f4d0689a.js",
     "runtime-main.js.map": "/ProyectoAlqueria/static/js/runtime-main.f4d0689a.js.map",
     "static/css/2.d66534b3.chunk.css": "/ProyectoAlqueria/static/css/2.d66534b3.chunk.css",
@@ -32,6 +32,6 @@
     "static/css/2.d66534b3.chunk.css",
     "static/js/2.7c6649d4.chunk.js",
     "static/css/main.6dbc26ed.chunk.css",
-    "static/js/main.bac71c79.chunk.js"
+    "static/js/main.d20f48ab.chunk.js"
   ]
 }
