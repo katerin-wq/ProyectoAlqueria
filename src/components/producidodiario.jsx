@@ -36,7 +36,7 @@ const Links = () => {
     }
   };
   const onDeleteLink = async (id) => {
-    if (window.confirm("are you sure you want to delete this link?")) {
+    if (window.confirm("¿Estas seguro de querer eliminar este registro?")) {
       await db.collection("links").doc(id).delete();
       toast('Registro eliminado', {
         type: "error",
@@ -60,10 +60,18 @@ const Links = () => {
 
   return (
   <div>
-        <div className="col-md-5 pd-2">
+  <div className="frase1">
+  <i>“Cuando un hombre acierta a vivir su vida en el campo, como presumo que muchísimos lo consiguen,
+   <br></br>disfruta de un bienestar mucho mayor que el cantado en las descripciones pastoriles de los poetas,
+   <br></br>o en el aislamiento lleno de vanagloria celebrado por los filósofos.”</i>
+  <br></br>ㅤ
+  <br></br>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+   <i>— Sir Richard Steele, libro: "bienestar, campo, vivir"</i>
+</div>
+        <div className="formulario2">
         <LinkForm {...{ addOrEditLink, currentId, links }} />
         </div>
-      <div className="col-md-5">
+      <div className="formulario2">
         {links.map(link => (
           <div className="card mb-1 pd-2" key={link.id}>
            <div className="card-body">

@@ -7,7 +7,7 @@ const Header = () => {
             <div className="headerMenu">
                 <nav id="menu">
                     <ul>
-                    <Link to='/'>
+                    <Link to='/ProyectoAlqueria'>
                         <img src={image} alt="Cargando..."/>
                         </Link>
                     </ul>

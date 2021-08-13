@@ -60,10 +60,17 @@ const Links = () => {
 
   return (
   <div>
-        <div className="col-md-5 pd-2">
+  <div className="frase">
+    <i>"La ciudad cree que fuera de ella no hay más que paisaje, patatas y leche;
+    <br></br>ignoran que también  existe una cultura noble, antiquísima e insobornable.“</i>
+    <br></br>ㅤ
+    <br></br>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+     <i>—  Alfonso Daniel Rodríguez Castelao, libro Siempre en Galiza</i>
+  </div>
+        <div className="formulario1">
         <LinkForm {...{ addOrEditLink, currentId, links }} />
         </div>
-      <div className="col-md-5">
+      <div className="formulario1">
         {links.map(link => (
           <div className="card mb-1 pd-2" key={link.id}>
            <div className="card-body">
@@ -88,8 +95,10 @@ const Links = () => {
         ))}
       </div>
       <div id="volver">
-        <Link to='/ProyectoAlqueria/opciones'><h1>ㅤㅤㅤㅤㅤㅤAtrasㅤ</h1></Link>
-        <Link to='/ProyectoAlqueria/produccion'><h1>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤAñadir Produccion</h1></Link>
+        <Link to='/ProyectoAlqueria/opciones'><h1>ㅤㅤㅤㅤㅤㅤ
+        Atrasㅤ</h1></Link>
+        <Link to='/ProyectoAlqueria/produccion'><h1>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+        Añadir Produccion</h1></Link>
       </div>
   </div>
   );

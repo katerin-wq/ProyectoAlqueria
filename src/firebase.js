@@ -2,6 +2,7 @@
   import firebase from 'firebase/app'
   import 'firebase/auth'
   import 'firebase/firestore' 
+  
   var firebaseConfig = {
       apiKey: "AIzaSyDjEgMGvowUsAs0EzxVRWuDmkGyYTsuvVQ",
       authDomain: "fb-crud-re-act.firebaseapp.com",
