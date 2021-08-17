@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ProyectoAlqueria/static/css/main.6dbc26ed.chunk.css",
-    "main.js": "/ProyectoAlqueria/static/js/main.d20f48ab.chunk.js",
-    "main.js.map": "/ProyectoAlqueria/static/js/main.d20f48ab.chunk.js.map",
+    "main.css": "/ProyectoAlqueria/static/css/main.2331ffe5.chunk.css",
+    "main.js": "/ProyectoAlqueria/static/js/main.c081ba98.chunk.js",
+    "main.js.map": "/ProyectoAlqueria/static/js/main.c081ba98.chunk.js.map",
     "runtime-main.js": "/ProyectoAlqueria/static/js/runtime-main.f4d0689a.js",
     "runtime-main.js.map": "/ProyectoAlqueria/static/js/runtime-main.f4d0689a.js.map",
     "static/css/2.d66534b3.chunk.css": "/ProyectoAlqueria/static/css/2.d66534b3.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.9d2a2030.chunk.js.map": "/ProyectoAlqueria/static/js/3.9d2a2030.chunk.js.map",
     "index.html": "/ProyectoAlqueria/index.html",
     "static/css/2.d66534b3.chunk.css.map": "/ProyectoAlqueria/static/css/2.d66534b3.chunk.css.map",
-    "static/css/main.6dbc26ed.chunk.css.map": "/ProyectoAlqueria/static/css/main.6dbc26ed.chunk.css.map",
+    "static/css/main.2331ffe5.chunk.css.map": "/ProyectoAlqueria/static/css/main.2331ffe5.chunk.css.map",
     "static/js/2.7c6649d4.chunk.js.LICENSE.txt": "/ProyectoAlqueria/static/js/2.7c6649d4.chunk.js.LICENSE.txt",
     "static/media/agranjas.85477fa1.jpg": "/ProyectoAlqueria/static/media/agranjas.85477fa1.jpg",
     "static/media/edit.0f46e272.png": "/ProyectoAlqueria/static/media/edit.0f46e272.png",
@@ -31,7 +31,7 @@
     "static/js/runtime-main.f4d0689a.js",
     "static/css/2.d66534b3.chunk.css",
     "static/js/2.7c6649d4.chunk.js",
-    "static/css/main.6dbc26ed.chunk.css",
-    "static/js/main.d20f48ab.chunk.js"
+    "static/css/main.2331ffe5.chunk.css",
+    "static/js/main.c081ba98.chunk.js"
   ]
 }
